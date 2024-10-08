@@ -61,6 +61,8 @@
                 :load-options="loadOptions"
     />
   </div>
+  <button @click="clear">Limpia</button>
+  <button @click="imprime">Imprime</button>
 </template>
 
 <script>
@@ -128,6 +130,12 @@ export default {
         const options = await this.fakeLoadChildren();
         callback(null, options);
       }
+    },
+    imprime(){
+      console.log(this.test);
+    },
+    clear() {
+      this.test = null;
     }
   },
   watch: {
