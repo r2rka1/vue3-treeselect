@@ -1936,6 +1936,8 @@ const handleRemoteSearch = () => {
   })
 };
 
+defineExpose({clear})
+
 /** Methods END*/
 
 /** Watch */
